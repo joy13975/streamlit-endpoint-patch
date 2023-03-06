@@ -1,9 +1,12 @@
 # streamlit-endpoint-patch
 Since `streamlit 1.18.0`, original endpoint names were migrated to new ones under `_stcore` (e.g. `_stcore/stream`) and this breaks some systems, espeically those behind reverse proxies or arrangements with forwarding rules that you cannot change in a heartbeat.
 
-This repo contains a very dirty monkey patch that forces [streamlit](https://github.com/streamlit/streamlit) to use the old endpoints of `/stream` (and friends like `/health`).
+This repo contains a string replacement patch that forces [streamlit](https://github.com/streamlit/streamlit) to use the old endpoints of `/stream` (and friends like `/health`).
 
-⚠️This is an unofficial patch and not approved by Streamlit developers. In the long run you should work to get the new endpoints working, and use this temporary solution at your own risk!⚠️
+⚠️This is an unofficial dirty hack **unapproved by Streamlit developers**. Please do NOT bring any discission related to this patch to the official repo/forums.
+
+⚠️**In the long run you should work to get the new endpoints working in your environment, and use this solution only as a temporary one, and at your own risk!**
+
 
 Last tested with `streamlit 1.19.0`.
 
