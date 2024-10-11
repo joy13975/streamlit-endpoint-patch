@@ -40,7 +40,7 @@ def main():
     js_targets = [
         os.path.join(
             os.path.dirname(st.__file__),
-            'static/static/js/main.1d359564.js'
+            'static/static/js/main.33ba0d1c.js'
         )
     ]
 
